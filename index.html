@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>मेरा पहला वेबसाइट — D&amp;G BROTHERS</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; margin:0; line-height:1.6;}
+    header{background:#111;color:#fff;padding:24px;text-align:center;border-bottom:4px solid #f1c40f;}
+    .container{max-width:1000px;margin:24px auto;padding:0 16px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+    .card{padding:16px;border:1px solid #eee;border-radius:8px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.04);}
+    footer{text-align:center;padding:16px;color:#666;margin-top:32px;}
+    a.button{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;background:#111;color:#fff;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>D&amp;G BROTHERS</h1>
+    <p>Believe and Trust</p>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <h2>हम कौन हैं</h2>
+        <p>हम स्टाइलिश और भरोसेमंद कपड़े बनाते हैं।</p>
+      </div>
+      <div class="card">
+        <h2>हमारी सेवाएँ</h2>
+        <ul>
+          <li>कपड़ों की डिजाइन</li>
+          <li>थोक और रिटेल सप्लाई</li>
+          <li>कस्टम ऑर्डर्स</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="margin-top:20px;" class="card">
+      <h2>संपर्क करें</h2>
+      <p>ईमेल: info@example.com</p>
+      <a class="button" href="mailto:info@example.com">मेल भेजें</a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> D&G BROTHERS — All rights reserved.
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
